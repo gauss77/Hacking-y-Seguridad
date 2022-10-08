@@ -29,10 +29,19 @@ Estas son las metodologías principales, pero, es importante que sepamos que seg
 
 ### Definición del alcance del test de penetración
 
-Antes de realizar cualquier acción debemos discutir con el cliente las tareas que llevará a cabo el analista durante el test de penetración, así como los roles y responsabilidades de ambos.
+Antes de realizar cualquier acción debemos ``discutir con el cliente las tareas`` que llevará a cabo el analista durante el test de penetración, así como los ``roles y responsabilidades`` de ambos.
 
-También es importante asegurar mediante un contrato firmado que las acciones que se llevaran a cabo son en representación del cliente.
+También es importante ``asegurar mediante un contrato firmado`` que las acciones que se llevaran a cabo son en representación del cliente.
 
 Debemos analizar las políticas del la organización las cuales definen el uso que pueden hacer los usuarios de los sistemas e infraestructura de la organización.
 
 Es importante definir un procedimiento en el caso de que se localice una intrusión por parte de un tercero.
+
+### ¿Cómo es un informe real de hacking ético o auditoria de seguridad?
+
+Debemos tener en cuenta que los informes de un hacking ético y auditoria de seguridad dependen mucho de la organización que los realiza y del tipo de auditoria que se ha llevado a cabo, No todas las auditorias son completas y siguen todas las fases antes mencionadas, en algunas ocasiones se centran en fases o entornos específicos dentro de la infraestructura tecnológica de una organización. Todo esto se debe concretar en la fase de definición del alcance.
+
+- ``Recursos para la elaboración de un informe de hacking ético o auditoria de seguridad``: 
+  - https://github.com/juliocesarfort/public-pentesting-reports. Recopilación de informes de auditorias reales de diferentes empresas.
+  - https://pentestreports.com/templates/. Plantillas para la elaboración de informes de hacking ético.
+  - https://github.com/hmaverickadams/TCM-Security-Sample-Pentest-Report
