@@ -16,7 +16,7 @@ Esto es muy importante a la hora de realizar un hacking ético, ya que en el cam
 
 * OTP (OWASP Testing Project)
 
-Estas son las metodologías principales, pero, es importante que sepamos que seguir un metodología al pie de la letra no es útil si no se adapta a nuestro estilo propio de trabajo, siempre debemos buscar algo que se adapte a nosotros y que podamos integrar a nuestro día a día, de lo contrario podemos abrumarnos al ver lo extenso que puede llegar a ser un documento de alguna de estas metodologías, es importante tener un equilibrio entre el documento formal y la practicidad.
+Estas son las metodologías principales, pero, es importante que sepamos que seguir una metodología al pie de la letra no es útil si no se adapta a nuestro estilo propio de trabajo, siempre debemos buscar algo que se adapte a nosotros y que podamos integrar a nuestro día a día, de lo contrario podemos abrumarnos al ver lo extenso que puede llegar a ser un documento de alguna de estas metodologías, es importante tener un equilibrio entre el documento formal y la practicidad.
 
 ## Metodología Básica
 
