@@ -45,3 +45,21 @@ Debemos tener en cuenta que los informes de un hacking ético y auditoria de seg
   - https://github.com/juliocesarfort/public-pentesting-reports. Recopilación de informes de auditorias reales de diferentes empresas.
   - https://pentestreports.com/templates/. Plantillas para la elaboración de informes de hacking ético.
   - https://github.com/hmaverickadams/TCM-Security-Sample-Pentest-Report
+
+## Recopilación pasiva de información
+
+Una de las primeras fases es la de recopilación de información, esta fase podemos dividirla en 3 sub fases: recopilación pasiva de información, recopilación semi pasiva de información y recopilación activa de información, el objetivo de estas 3 fases es tratar de obtener toda la información posible sobre nuestro objetivo, si estamos realizando un test sobre una organización determinada, entonces en esta fase nuestro objetivo es obtener toda la información que podamos sobre la infraestructura tecnológica de la organización de manera que facilite las siguientes fases del proceso de hacking ético. Todas las fases se van construyendo en base a los hallazgos de la fase anterior.
+
+### Recopilación pasiva de información
+
+La recopilación pasiva de información como su nombre lo indica consiste en recopilar toda la información que se pueda obtener sobre nuestro objetivo interactuando lo mínimo posible con el.
+
+- Recolección de información sobre un objetivo determinado sin que las actividades realizadas por el analista `sean mínimamente detectadas` por dicho objetivo.
+
+Por ejemplo, no intercambiaremos tráfico de red con el objetivo, es por esto que en esta fase hacharemos mano de recursos OSINT (Open Source Intelligence).
+
+- Difícil de realizar y a menudo proporciona resultados poco concluyentes.
+
+- La manera habitual de recolección pasiva de información es mediante el acceso a la `información almacenada en lugares públicos`
+
+- Raramente se utiliza de manera individual.
