@@ -63,3 +63,67 @@ Por ejemplo, no intercambiaremos tráfico de red con el objetivo, es por esto qu
 - La manera habitual de recolección pasiva de información es mediante el acceso a la `información almacenada en lugares públicos`
 
 - Raramente se utiliza de manera individual.
+
+## Hacking con buscadores: Google Hacking
+
+Podríamos llegar a pensar, ¿porque ponemos la palabra hacking si tan solo estamos usando el buscador de google para recopilar información?, resulta que todos lo buscadores nos proporcionan alguna herramientas avanzadas, una serie de comandos o palabras clave que nos permiten construir consultas mas avanzadas de las que solemos hacer comúnmente, con esto podemos encontrar información muy específica sobre nuestro objetivo la cual está publicada en internet y que estos buscadores han indexado.
+
+Por lo general se utiliza google ya que es el buscador que mas información indexa, pero también podemos utilizar otros buscadores como Bing, yahoo, duckduckgo, etc.
+
+Algunos de los comandos mas utilizados son:
+
+La sintaxis común de los comandos es `comando` `:` `consulta`
+
+- ``site:`` Nos permite buscar información sobre un dominio en concreto.
+
+Todos los resultados serán de ese dominio en concreto.
+
+Ejemplo: ``site:google.com``
+
+- ``filetype:`` Nos permite buscar información sobre un tipo de archivo en concreto.
+
+Ejemplo: ``site:google.com filetype:pdf``
+
+o ``site:google.com filetype:txt``
+
+Nos devolverá todos los archivos pdf que se encuentren en el dominio google.com
+
+Existen varios, su nombre técnico es ``Google Dorks``.
+
+Podemos usar los comillas dobles ``""`` para hacer una búsqueda exacta de una frase en concreto.
+
+Por ejemplo: ``"index of" / "chat/logs"``
+
+Este tipo de búsqueda, por ejemplo, nos devuelve logs de algunos chats los cuales pueden ser de alguna organización en concreto, tan solo debemos usar el comando ``site:`` para buscar información sobre ese dominio en especifico, y podríamos encontrar chats que de alguna forma se han dejado públicos en internet, lo cual puede ser un punto de entrada para un ataque.
+
+Por ejemplo: ``"index of" / "chat/logs" site:google.com``
+
+Un dork muy típico es buscar dumps o volcados de bases de datos sql de alguna organización, esto se puede hacer de la siguiente manera:
+
+- ``filetype:sql "MySQL dump"``
+
+Podemos reemplazar el comando ``filetype:`` por ``ext:``
+
+- ``ext:sql "MySQL dump"``
+
+- ``ext:sql "MySQL dump" (password|pass|passwd|pwd)``. Nos devuelve los dumps de bases de datos sql que contienen la palabra password, pass, passwd o pwd.
+
+Con este tipo de dork por lo general encontramos resultados en páginas como Github, GitLab, Bitbucket, etc. con archivos en donde se pueden haber dejado volcados de bases de datos con contraseñas, nombres de usuarios, etc.
+
+Si nosotros quisiésemos buscar una aplicación web con una url especifico y queremos buscar una parte de esa url podemos usar el comando ``inurl:``
+
+- ``inurl:index.php?id=``
+
+Con esta búsqueda podemos encontrar un url la cual podemos, por ejemplo, para hacer sql injection.
+
+Por ejemplo: ``website.com/index.php?id=' or '1'=='1'--``
+
+Si no hay una santificación correcta de los valores que recibe el parámetro id, lo que puede pasar es que mediante una sql injection podemos acceder al contenido de la base de datos de esa aplicación web.
+
+Otro dork común es:
+
+- ``site:gov ext:pdf allintitle:restricted``
+
+Esta búsqueda nos devuelve todos los archivos pdf que se encuentran en dominios .gov y que contienen la palabra restricted en el titulo, podríamos encontrar documentos con información que debería ser restringida.
+
+Debemos recordar que la información que recabamos mediante este tipo de herramientas es información que nos sera útil en las fases posteriores.
